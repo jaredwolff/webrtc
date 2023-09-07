@@ -14,7 +14,7 @@ use crate::url::{ProtoType, SchemeType, Url};
 pub(crate) struct OptimisticAuthHandler;
 
 impl AuthHandler for OptimisticAuthHandler {
-    fn auth_handle(
+    async fn auth_handle(
         &self,
         _username: &str,
         _realm: &str,
